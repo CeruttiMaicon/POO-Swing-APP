@@ -1,35 +1,38 @@
 package projetoswingpoo.view;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import org.jdesktop.swingx.JXDatePicker;
-public class Calendario extends JPanel{
-	 static JLabel label = new JLabel();
-	 static JXDatePicker datePicker = new JXDatePicker();
-	 JFrame frame;
-	public Calendario(){
+
+public class Calendario extends JFrame {
+	private JLabel label;
+
+	public Calendario() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Calendario");
+		setSize(360, 678);
+		setResizable(false);
+		setup();
 	}
-		private static void createAndShowGUI() {
-			label.setText("Calendário.");
-			JFrame frame = new JFrame("JXDatePicker");
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			Calendario newContentPane = new Calendario();
-			newContentPane.setOpaque(true); 
-			frame.setContentPane(newContentPane);
-			frame.add(label);
-			frame.add(datePicker);
-			frame.pack();
-			frame.setVisible(true);
-			frame.setSize(380,678);
-			frame.setBounds(25, 75, 300, 470);
+
+	private void setup() {
+		JPanel painel = new JPanel();
+		painel.setSize(360, 678);
+		painel.setLayout(null);
+
+		JXDatePicker datepicker = new JXDatePicker();
+		datepicker.setBounds(25, 90, 300, 80);
+		datepicker.setVisible(true);
+		painel.add(datepicker);
+		
+		JButton butao = new JButton("Ajuda!");
+		butao.setBounds(130, 400, 80, 40);
+		painel.add(butao);
+
+		add(painel);
+		
 	}
-	public static void main(String[] args) {
-		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				createAndShowGUI();
-			}
-		});
-	}
-	}
+}

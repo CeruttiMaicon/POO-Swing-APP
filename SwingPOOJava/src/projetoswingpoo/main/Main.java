@@ -5,7 +5,11 @@ import projetoswingpoo.controller.ClienteCadastro;
 import projetoswingpoo.view.Cadastro;
 import projetoswingpoo.view.CadastroFoto;
 import projetoswingpoo.view.CadastroPronto;
+<<<<<<< HEAD
 import projetoswingpoo.view.MenuLogin;
+=======
+import projetoswingpoo.view.Calendario;
+>>>>>>> 25bf50ab3b079d0c1d7d836f7c13d1412d2230db
 import projetoswingpoo.view.TelaEscolhaEstiloDeCadastro;
 import projetoswingpoo.view.TelaInicioDoAPP;
 
@@ -37,8 +41,12 @@ public class Main {
 		//Abrindo Tela Cadastro
 		//Cadastro cadastro = new Cadastro();
 		//cadastro.setVisible(true);
+<<<<<<< HEAD
 		//ClienteCadastro controller = new ClienteCadastro();
 		//controller.initcontroller();
+=======
+		//clienteprestadorcontroller controller = new clienteprestadorcontroller();
+>>>>>>> 25bf50ab3b079d0c1d7d836f7c13d1412d2230db
 		
 		
 		//Abrindo Tela Cadastro Foto
@@ -49,6 +57,9 @@ public class Main {
 		//CadastroPronto cadastrop = new CadastroPronto();
 		//cadastrop.setVisible(true);
 		
+		//Abrindo Tela Calendario
+		Calendario calendario = new Calendario();
+		calendario.setVisible(true);
 		
 		
 		
