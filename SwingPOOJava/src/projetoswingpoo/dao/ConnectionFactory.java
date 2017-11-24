@@ -12,7 +12,7 @@ public class ConnectionFactory {
             return DriverManager.getConnection(
                     "jdbc:mysql://localhost/app_database", // link de conexão
                     "root", // usuario
-                    "");// senha
+                    "univille");// senha
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

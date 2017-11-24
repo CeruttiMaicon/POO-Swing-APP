@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
@@ -22,7 +23,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.SpinnerDateModel;
 import javax.swing.SpinnerModel;
 
-import projetoswingpoo.controller.clienteprestadorcontroller;
+import projetoswingpoo.controller.ClienteCadastro;
 import projetoswingpoo.dao.ClientePrestadorDAO;
 import projetoswingpoo.model.clienteprestador;
 
@@ -83,13 +84,15 @@ public class Cadastro extends JFrame {
 	}
 
 	public void setErrorMessage(String msg) {
-		statusLabel.setText(msg);
-		statusLabel.setForeground(Color.RED);
+		//statusLabel.setText(msg);
+		JOptionPane.showMessageDialog(null, msg);
+		//statusLabel.setForeground(Color.RED);
 	}
 
 	public void setSuccessMessage(String msg) {
-		statusLabel.setText(msg);
-		statusLabel.setForeground(Color.BLUE);
+		//statusLabel.setText(msg);
+		JOptionPane.showMessageDialog(null, msg);
+		//statusLabel.setForeground(Color.BLUE);
 	}
 
 	public Cadastro() {
@@ -357,19 +360,11 @@ public class Cadastro extends JFrame {
 		botaoproximo = new JButton("Próximo");
 		botaoproximo.setBounds(40, 555, 265, 30);
 
-		botaoproximo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				//colocar que ele vai pra outra tela e faz o cadastro no banco de dados
-				ClientePrestadorDAO dao = new ClientePrestadorDAO();
-				clienteprestador cliente = new clienteprestador();
-				
-				
-				
-				dao.saveinfo(cliente);
-			}
-		});
-
 		painel.add(botaoproximo);
+		
+		statusLabel = new JLabel();
+		statusLabel.setBounds(80, 100, 300, 30);
+		painel.add(statusLabel);
 
 		add(painel);
 		painel.add(listScroller);
@@ -391,8 +386,8 @@ public class Cadastro extends JFrame {
 		// JLabel - mostra a mensagem se o cadastro foi ou não efetuado com
 		// sucesso
 
-		statusLabel = new JLabel();
-		statusLabel.setBounds(80, 100, 300, 30);
+
+		
 
 		////////////////////////////////////////////////
 

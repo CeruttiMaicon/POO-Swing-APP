@@ -12,9 +12,13 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import projetoswingpoo.controller.Navegador;
+
 public class TelaInicioDoAPP extends JFrame {
 	
 	private JLabel label;
+	private JButton botaoregistro;
+	private JButton botaologin;
 	
 	public TelaInicioDoAPP() {
 
@@ -86,20 +90,31 @@ public class TelaInicioDoAPP extends JFrame {
 		////////////////////////////////////////////////////
 		
 		//Botão Login
-		JButton butao = new JButton("Login");
-		butao.setBounds(35, 400, 280, 40);
-		butao.setFont(new Font("", Font.BOLD, 15));
+		botaologin = new JButton("Login");
+		botaologin.setBounds(35, 400, 280, 40);
+		botaologin.setFont(new Font("", Font.BOLD, 15));
+		botaologin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toLogin();
+			}
+		});
 		
-		painel.add(butao);
+		painel.add(botaologin);
 		
 		//////////////////////////////////////////////////////
 		
 		//Botão Registro
-		JButton butao2 = new JButton("Registrar");
-		butao2.setBounds(35, 450, 280, 40);
-		butao2.setFont(new Font("", Font.BOLD, 15));
+		botaoregistro = new JButton("Registrar");
+		botaoregistro.setBounds(35, 450, 280, 40);
+		botaoregistro.setFont(new Font("", Font.BOLD, 15));
+		botaoregistro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toTelaContinuarCadastro();
+			}
+		});
 		
-		painel.add(butao2);
+		
+		painel.add(botaoregistro);
 		
 		
 		add(painel);

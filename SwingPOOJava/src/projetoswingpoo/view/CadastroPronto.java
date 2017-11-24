@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 
 public class CadastroPronto extends JFrame {
+	
+	private JButton botaoproximopronto;
 
 
 	
@@ -25,7 +27,7 @@ public class CadastroPronto extends JFrame {
 		setVisible(true);
 
 		// nome janela
-		setTitle("Cadastro Foto");
+		setTitle("Cadastro Pronto");
 
 		// tamanho janela
 		setSize(360, 678);
@@ -45,11 +47,11 @@ public class CadastroPronto extends JFrame {
 
 		// Botão
 
-		JButton butao = new JButton("Próximo");
-		butao.setBounds(40, 555, 265, 30); // (Lado esquerdo, Cima para baixo,
+		botaoproximopronto = new JButton("Próximo");
+		botaoproximopronto.setBounds(40, 555, 265, 30); // (Lado esquerdo, Cima para baixo,
 											// Tamanho largura, Tamanho altura)
 
-		painel.add(butao);
+		painel.add(botaoproximopronto);
 		add(painel);
 
 		/////////////////////////////////////////////

@@ -20,9 +20,7 @@ public class ClientePrestadorDAO {
 		String sql = "INSERT INTO clienteprestador(CPF,RG,CEP,endereco,datanascimento,nomeprestador,usuario,senha)"
 				+ "values(?,?,?,?,?,?,?,?);";
 		try {
-			PreparedStatement stmt = (PreparedStatement) mConn.prepareStatement(sql);
-			
-			
+			PreparedStatement stmt = (PreparedStatement) mConn.prepareStatement(sql);		
 			// troca os ? pelos valores da Tarefa.
 			stmt.setString(1, model.getCPF());
 			stmt.setString(2, model.getRG());

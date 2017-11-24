@@ -1,12 +1,19 @@
 package projetoswingpoo.view;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import projetoswingpoo.controller.Navegador;
+
 public class TelaContinueAoCadastro extends JFrame {
+	
+	private JButton botaoretorno;
+	private JButton botaocontinuar;
 	
 	
 private JLabel label;
@@ -74,20 +81,31 @@ private JLabel label;
 		////////////////////////////////////////////////////
 		
 		//Botão Login
-		JButton butao = new JButton("Continuar");
-		butao.setBounds(35, 400, 280, 40);
-		butao.setFont(new Font("", Font.BOLD, 15));
+		botaocontinuar = new JButton("Continuar");
+		botaocontinuar.setBounds(35, 400, 280, 40);
+		botaocontinuar.setFont(new Font("", Font.BOLD, 15));
+		botaocontinuar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toCadastro();
+			}
+		});
 		
-		painel.add(butao);
+		painel.add(botaocontinuar);
 		
 		//////////////////////////////////////////////////////
 		
 		//Botão Registro
-		JButton butao2 = new JButton("Retornar");
-		butao2.setBounds(35, 450, 280, 40);
-		butao2.setFont(new Font("", Font.BOLD, 15));
+		botaoretorno = new JButton("Retornar");
+		botaoretorno.setBounds(35, 450, 280, 40);
+		botaoretorno.setFont(new Font("", Font.BOLD, 15));
+		botaoretorno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toTelaInicio();
+			}
+		});
+
 		
-		painel.add(butao2);
+		painel.add(botaoretorno);
 		
 		
 		add(painel);

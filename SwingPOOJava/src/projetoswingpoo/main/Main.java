@@ -1,11 +1,13 @@
 package projetoswingpoo.main;
 import javax.swing.JFrame;
 
-import projetoswingpoo.controller.clienteprestadorcontroller;
+import projetoswingpoo.controller.ClienteCadastro;
 import projetoswingpoo.view.Cadastro;
 import projetoswingpoo.view.CadastroFoto;
 import projetoswingpoo.view.CadastroPronto;
+import projetoswingpoo.view.MenuLogin;
 import projetoswingpoo.view.TelaEscolhaEstiloDeCadastro;
+import projetoswingpoo.view.TelaInicioDoAPP;
 
 public class Main {
 
@@ -21,8 +23,8 @@ public class Main {
 		//janelaLogin.setVisible(true);
 		
 		//Abrindo TelaInicioDoAPP
-		//TelaInicioDoAPP inicio = new TelaInicioDoAPP();
-		//inicio.setVisible(true);
+		TelaInicioDoAPP inicio = new TelaInicioDoAPP();
+		inicio.setVisible(true);
 		
 		//Abrindo TelaContinueAoCadastro
 		//TelaContinueAoCadastro continuecadastro = new TelaContinueAoCadastro();
@@ -33,9 +35,10 @@ public class Main {
 		//estilo.setVisible(true);
 		
 		//Abrindo Tela Cadastro
-		Cadastro cadastro = new Cadastro();
-		cadastro.setVisible(true);
-		//clienteprestadorcontroller controller = new clienteprestadorcontroller();
+		//Cadastro cadastro = new Cadastro();
+		//cadastro.setVisible(true);
+		//ClienteCadastro controller = new ClienteCadastro();
+		//controller.initcontroller();
 		
 		
 		//Abrindo Tela Cadastro Foto

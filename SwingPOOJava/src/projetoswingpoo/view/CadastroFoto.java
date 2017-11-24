@@ -2,6 +2,8 @@ package projetoswingpoo.view;
 
 
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
@@ -13,9 +15,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 
+import projetoswingpoo.controller.Navegador;
+
 public class CadastroFoto extends JFrame {
 
 	private int min = 0, max = 2, ini = 1;
+	
+	private JButton botaoproximofoto;
+	private JButton botaopular;
 
 	public CadastroFoto() {
 
@@ -86,19 +93,29 @@ public class CadastroFoto extends JFrame {
 
 		// Botão
 
-		JButton butao = new JButton("Próximo");
-		butao.setBounds(40, 500, 265, 30);
+		botaoproximofoto = new JButton("Próximo");
+		botaoproximofoto.setBounds(40, 500, 265, 30);
+		botaoproximofoto.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toCadastropronto();
+			}
+		});
 
-		painel.add(butao);
+		painel.add(botaoproximofoto);
 
 		/////////////////////////////////////////////
 
 		// Botão
 
-		JButton butao2 = new JButton("Pular Etapa");
-		butao2.setBounds(40, 540, 265, 30);
+		botaopular = new JButton("Pular Etapa");
+		botaopular.setBounds(40, 540, 265, 30);
+		botaopular.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Navegador.toCadastropronto();
+			}
+		});
 
-		painel.add(butao2);
+		painel.add(botaopular);
 
 		/////////////////////////////////////////////
 
