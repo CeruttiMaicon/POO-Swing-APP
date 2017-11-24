@@ -1,23 +1,23 @@
-<<<<<<< HEAD:Projeto Swing/src/projetoswingpoo/view/CadastroPronto.java
+
 package projetoswingpoo.view;
 
-=======
+
 import javax.swing.JButton;
->>>>>>> 7ae5a73b264f7694ce520bfb29daa4334bd40ce0:Projeto Swing/src/CadastroPronto.java
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 
 public class CadastroPronto extends JFrame {
 
-<<<<<<< HEAD:Projeto Swing/src/projetoswingpoo/view/CadastroPronto.java
+
 	
-	public CadastroPronto(){
-=======
+	
+
 	private int min = 0, max = 2, ini = 2;
 
 	public CadastroPronto() {
->>>>>>> 7ae5a73b264f7694ce520bfb29daa4334bd40ce0:Projeto Swing/src/CadastroPronto.java
+
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

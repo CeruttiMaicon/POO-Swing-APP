@@ -2,6 +2,8 @@ package projetoswingpoo.model;
 
 import java.util.Date;
 
+import projetoswingpoo.view.Cadastro;
+
 public class clienteprestador {
 	
 	public String usuario;
@@ -13,7 +15,7 @@ public class clienteprestador {
 	public String endereco;
 	public Date datanascimento;
 	
-	public String getUsuario() { //nestes geters não teria que puxar lá do Cadastro???????
+	public String getUsuario() {//estamos fazendo aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 		return usuario;
 	}
 	public void setUsuario(String usuario) {

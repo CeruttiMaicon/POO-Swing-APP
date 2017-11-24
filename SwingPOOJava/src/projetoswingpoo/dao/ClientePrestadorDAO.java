@@ -1,16 +1,9 @@
 package projetoswingpoo.dao;
 
 import java.sql.Connection;
-import java.sql.Date;
-import java.util.ArrayList;
-import java.util.List;
-
 import projetoswingpoo.model.clienteprestador;
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
-import projetoswingpoo.view.Cadastro;
 
 public class ClientePrestadorDAO {
 
@@ -38,7 +31,7 @@ public class ClientePrestadorDAO {
 			stmt.setDate(5, new java.sql.Date(model.getDatanascimento().getTime()));
 			stmt.setString(6, model.getNomecompleto());
 			stmt.setString(7, model.getUsuario());
-			stmt.setString(8, model.getSenha());
+			stmt.setString(8, model.getSenha());//
 			
 			// Para salvar a Data no banco de dados
 			// tem que usar o java.sql.Date

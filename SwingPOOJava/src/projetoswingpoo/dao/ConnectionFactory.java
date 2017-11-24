@@ -10,7 +10,7 @@ public class ConnectionFactory {
 	public Connection getConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost/app_database?autoReconnect=true&useSSL=false", // link de conexão
+                    "jdbc:mysql://localhost/app_database", // link de conexão
                     "root", // usuario
                     "");// senha
         } catch (SQLException e) {
