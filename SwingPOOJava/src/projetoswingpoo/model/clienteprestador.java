@@ -13,7 +13,7 @@ public class clienteprestador {
 	public String endereco;
 	public Date datanascimento;
 	
-	public String getUsuario() {
+	public String getUsuario() { //nestes geters não teria que puxar lá do Cadastro???????
 		return usuario;
 	}
 	public void setUsuario(String usuario) {
