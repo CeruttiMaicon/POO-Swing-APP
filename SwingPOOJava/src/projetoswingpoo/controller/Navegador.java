@@ -3,9 +3,12 @@ package projetoswingpoo.controller;
 import projetoswingpoo.view.Cadastro;
 import projetoswingpoo.view.CadastroFoto;
 import projetoswingpoo.view.CadastroPronto;
+import projetoswingpoo.view.Calendario;
 import projetoswingpoo.view.MenuLogin;
 import projetoswingpoo.view.TelaContinueAoCadastro;
 import projetoswingpoo.view.TelaInicioDoAPP;
+import projetoswingpoo.view.TelaLocais;
+import projetoswingpoo.view.TelaPerfil;
 
 public class Navegador {
 	
@@ -28,5 +31,13 @@ public class Navegador {
 	public static void toTelaInicio(){
 		TelaInicioDoAPP inicio = new TelaInicioDoAPP();
 	}
-	
+	public static void toTelaPerfil(){
+		TelaPerfil perfil = new TelaPerfil();
+	}
+	public static void toTelaLocais(){
+		TelaLocais locais = new TelaLocais();
+	}
+	public static void toTelaCalendario(){
+		Calendario calendario = new Calendario();
+	}
 }
