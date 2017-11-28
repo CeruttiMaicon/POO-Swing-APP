@@ -27,8 +27,8 @@ public class Main {
 		//janelaLogin.setVisible(true);
 		
 		//Abrindo TelaInicioDoAPP
-		TelaInicioDoAPP inicio = new TelaInicioDoAPP();
-		inicio.setVisible(true);
+		//TelaInicioDoAPP inicio = new TelaInicioDoAPP();
+		//inicio.setVisible(true);
 		
 		//Abrindo TelaContinueAoCadastro
 		//TelaContinueAoCadastro continuecadastro = new TelaContinueAoCadastro();
@@ -52,12 +52,13 @@ public class Main {
 		//foto.setVisible(true);
 		
 		//Abrindo Tela Conclusão Cadastro Foto
-		//CadastroPronto cadastrop = new CadastroPronto();
-		//cadastrop.setVisible(true);
+		CadastroPronto cadastrop = new CadastroPronto();
+		cadastrop.setVisible(true);
 		
 		//Abrindo Tela Calendario
 		//Calendario calendario = new Calendario();
 		//calendario.setVisible(true);
+		
 		
 		
 		
